@@ -21,6 +21,7 @@
 - belongs_to :user
 - belongs_to :group
 
+
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -38,3 +39,4 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
+
