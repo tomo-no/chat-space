@@ -68,7 +68,6 @@ $(function(){
 
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
-    console.log(last_message_id)
     $.ajax({
       url: 'api/messages',
       type: 'get',
@@ -88,8 +87,6 @@ $(function(){
     .fail(function() {
       alert('自動更新に失敗しました');
     });
-  };
-  if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-  setInterval(reloadMessages, 7000);
   }
+  setInterval(reloadMessages, 7000);
 });
